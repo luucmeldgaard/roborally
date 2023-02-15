@@ -1,0 +1,26 @@
+Fat-hat guiden til opsætning af RoboRally
+
+1. Clone git repo (KÆFT du er dygtig at du allerede har gjort det <3)
+
+2. Installer den rette JDK (Java 17.0.2)
+   Link: https://download.oracle.com/java/17/archive/jdk-17.0.2_windows-x64_bin.exe
+
+3. Genstart IntelliJ
+
+4. Du ved den der knap oppe til højre, hvor der står 'current file' eller 'RoboRally'?
+   Klik på den og vælg "Edit Configuration..."
+
+5. Under 'Build and Run' skal du i den første boks vælge: "java 17 SDK of 'roborally' module"
+
+6. I den næste boks har jeg valgt: "--module-path C:\Users\LuucM\IdeaProjects\2023RoboRally\RoboRally\roborally-1.0.0-java17\roborally-initial\javafx-sdk-17.0.6\lib --add-modules javafx.controls,javafx.fxml"
+   Altså læg mærke til: roborally-initial\javafx-sdk-17.0.6\lib --add-modules javafx.controls,javafx.fxml
+   som er den del af fil-stien, som vi ahr tilfælles. Så sæt den til ala den samme fil-sti yo.
+   Læg mærke til, at der skal stå "--module-path " foran og " --add-modules javafx.controls,javafx.fxml" bag fil-stien.
+
+7. I den næste boks skal der stå "dk.dtu.compute.se.pisd.roborally.RoboRally"
+
+8. Du er nu done og kan klikke OK.
+
+9. Klik på Run og kryds fingre.
+
+10. Åben .gitignore og indsæt ALT der ikke er i source-mappen. Isæt javafx-sdk-17.0.6 mappen. Tak.
